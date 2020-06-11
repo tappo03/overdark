@@ -1,7 +1,7 @@
 # 💡 OverDark API PHP Library
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/145b8d41e484414ea81272c3997e5468)](https://www.codacy.com/manual/tappo03/overdark?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tappo03/overdark&amp;utm_campaign=Badge_Grade)
-[![License: MIT](https://img.shields.io/github/license/tappo03/overdark)]
-[![GitHub issues](https://img.shields.io/github/issues/tappo03/overdark)]
+[![License: MIT](https://img.shields.io/github/license/tappo03/overdark)](https://opensource.org/licenses/MIT)
+[![GitHub issues](https://img.shields.io/github/issues/tappo03/overdark)](https://github.com/tappo03/overdark)
 
 All functions of **overdark API** into a [PHP](<https://php.net>) Library, for more info <https://overdarkgame.com/langs/en/api/#/documentation>
 
