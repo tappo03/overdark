@@ -1,10 +1,10 @@
 # 💡 OverDark API PHP Library
 All functions of <b>overdark API</b> into a <a href = 'https://php.net'>PHP</a> Library, for more info https://overdarkgame.com/langs/en/api/#/documentation
 
-# 🔗 TOKEN Retrive:
+# 🔗 TOKEN Retrive
 Retrive API Token from <a href = 'https://t.me/OverDarkAPI_bot'>OverDarkAPI</a>, if you not have, register to bot
 
-# 💾 Installation:
+# 💾 Installation
 With <b>json file</b> (<code>Composer</code>):
 ``` json
 {
@@ -17,7 +17,7 @@ With <b>json file</b> (<code>Composer</code>):
 With <b>command line</b> (<code>Composer</code>):
 
 ➖ <code>composer require tappo03/overdark_api</code>
-# ⚙️ Example:
+# ⚙️ Example
 ➖ You can call overdark api with <code>tappo03\overdark\api</code> namespace:
 ```php
 require_once ( __DIR__ . '/vendor/autoload.php' );
