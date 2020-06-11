@@ -73,7 +73,7 @@ use tappo03\overdark\api\request;
 
 $over_dark = new request('en','token',false);
 
-print_r ($over_dark->get_classification ('overdark')); // or darkworld
+print_r ($over_dark->get_classification ('overworld')); // or darkworld
 ```
 ➖ **get_player_image example:**
 ```php
