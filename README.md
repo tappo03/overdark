@@ -1,4 +1,7 @@
 # 💡 OverDark API PHP Library
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c0c2ec2b973f4f84a2cac0d240f8ccb5)](https://app.codacy.com/manual/tappo03/overdark?utm_source=github.com&utm_medium=referral&utm_content=tappo03/overdark&utm_campaign=Badge_Grade_Dashboard)
+
 All functions of **overdark API** into a [PHP](<https://php.net>) Library, for more info <https://overdarkgame.com/langs/en/api/#/documentation>
 
 ## 🔗 TOKEN Retrive
