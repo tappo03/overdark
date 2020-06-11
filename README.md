@@ -2,7 +2,7 @@
 All functions of <b>overdark API</b> into a <a href = 'https://php.net'>PHP</a> Library, for more info https://overdarkgame.com/langs/en/api/#/documentation
 
 # 🔗 TOKEN Retrive:
-Retrive API Token from <a href = 't.me/OverDarkAPI_bot'>OverDarkAPI</a>, if you not have, register to bot
+Retrive API Token from <a href = 'https://t.me/OverDarkAPI_bot'>OverDarkAPI</a>, if you not have, register to bot
 
 # 💾 Installation:
 With <b>json file</b> (<code>Composer</code>):
