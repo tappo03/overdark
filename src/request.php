@@ -44,12 +44,12 @@ class request
         try {
             $response = $this->client->request ('GET', 'get_profile.php?tag=' . urlencode ($tag) . '&token=' . urlencode ($this->token) . '&lang=' . urlencode ($this->lang));
         } catch (GuzzleException $e){
-            die($e->getMessage ());
+            exit($e->getMessage ());
         }
         if($response->getStatusCode () === 200)
             return json_decode ($response->getBody (), $this->array);
         else
-            die($response->getStatusCode ());
+            exit($response->getStatusCode ());
     }
 
     /**
@@ -62,12 +62,12 @@ class request
         try {
             $response = $this->client->request ('GET', 'get_clan.php?tag=' . urlencode ($clan_id) . '&token=' . urlencode ($this->token) . '&lang=' . urlencode ($this->lang));
         } catch (GuzzleException $e){
-            die($e->getMessage ());
+            exit($e->getMessage ());
         }
         if($response->getStatusCode () === 200)
             return json_decode ($response->getBody (), $this->array);
         else
-            die($response->getStatusCode ());
+            exit($response->getStatusCode ());
     }
 
     /**
@@ -79,12 +79,12 @@ class request
         try {
             $response = $this->client->request ('GET', 'get_char_info.php?token=' . urlencode ($this->token) . '&lang=' . urlencode ($this->lang));
         } catch (GuzzleException $e){
-            die($e->getMessage ());
+            exit($e->getMessage ());
         }
         if($response->getStatusCode () === 200)
             return json_decode ($response->getBody (), $this->array);
         else
-            die($response->getStatusCode ());
+            exit($response->getStatusCode ());
     }
 
     /**
@@ -97,12 +97,12 @@ class request
         try {
             $response = $this->client->request ('GET', 'get_classification.php?type=' . urlencode ($type) . '&token=' . urlencode ($this->token) . '&lang=' . urlencode ($this->lang));
         } catch (GuzzleException $e){
-            die($e->getMessage ());
+            exit($e->getMessage ());
         }
         if($response->getStatusCode () === 200)
             return json_decode ($response->getBody (), $this->array);
         else
-            die($response->getStatusCode ());
+            exit($response->getStatusCode ());
     }
 
     /**
