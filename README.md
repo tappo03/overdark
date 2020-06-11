@@ -4,8 +4,8 @@ All functions of <b>overdark API</b> into a <a href = 'https://php.net'>PHP</a> 
 # 🔗 TOKEN Retrive
 Retrive API Token from t.me/OverDarkAPI_bot, if you not have, register to bot
 
-# 💾 Install 
-With <b>json</b> file (<code>Composer</code>):
+# 💾 Installation 
+With <b>json file</b> (<code>Composer</code>):
 ``` json
 {
     ...
