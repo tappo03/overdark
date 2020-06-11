@@ -6,15 +6,15 @@
   "authors": [
     {
       "name": "Valerio" ,
-      "email": "info@tappo03.it",
+      "email": "info@tappo03.it" ,
       "role": "Developer"
     }
   ] ,
   "require": {
-    "php": ">=7.1",
+    "php": ">=7.1" ,
     "guzzlehttp/guzzle": "*" ,
     "ext-json": "*"
-  },
+  } ,
   "autoload": {
     "psr-4": {
       "tappo03\\overdark\\api\\": "src/"
