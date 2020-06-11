@@ -1,5 +1,5 @@
 # 💡 OverDark API PHP Library
-All functions of <b>overdark API</b> into a <a href = 'https://php.net'>PHP</a> Library 
+All functions of <b>overdark API</b> into a <a href = 'https://php.net'>PHP</a> Library, for more info https://overdarkgame.com/langs/it/api/#/documentation
 
 # 🔗 TOKEN Retrive
 Retrive API Token from t.me/OverDarkAPI_bot, if you not have, register to bot
