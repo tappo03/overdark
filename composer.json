@@ -1,7 +1,7 @@
 {
   "name": "tappo03/overdark_api" ,
   "description": "PHP Library for OverDark API" ,
-  "minimum-stability": "stable" ,
+  "minimum-stability": "dev" ,
   "license": "MIT" ,
   "authors": [
     {
