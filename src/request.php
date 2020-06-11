@@ -41,7 +41,7 @@ class request
      */
     public function get_profile (string $tag)
     {
-        try{
+        try {
             $response = $this->client->request ('GET', 'get_profile.php?tag=' . urlencode ($tag) . '&token=' . urlencode ($this->token) . '&lang=' . urlencode ($this->lang));
         } catch (GuzzleException $e){
             die($e->getMessage ());
@@ -59,7 +59,7 @@ class request
      */
     public function get_clan (string $clan_id)
     {
-        try{
+        try {
             $response = $this->client->request ('GET', 'get_clan.php?tag=' . urlencode ($clan_id) . '&token=' . urlencode ($this->token) . '&lang=' . urlencode ($this->lang));
         } catch (GuzzleException $e){
             die($e->getMessage ());
@@ -76,7 +76,7 @@ class request
      */
     public function get_char_info ()
     {
-        try{
+        try {
             $response = $this->client->request ('GET', 'get_char_info.php?token=' . urlencode ($this->token) . '&lang=' . urlencode ($this->lang));
         } catch (GuzzleException $e){
             die($e->getMessage ());
@@ -94,7 +94,7 @@ class request
      */
     public function get_classification (string $type)
     {
-        try{
+        try {
             $response = $this->client->request ('GET', 'get_classification.php?type=' . urlencode ($type) . '&token=' . urlencode ($this->token) . '&lang=' . urlencode ($this->lang));
         } catch (GuzzleException $e){
             die($e->getMessage ());
