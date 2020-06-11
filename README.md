@@ -4,6 +4,18 @@ All functions of <b>overdark API</b> into a <a href = 'https://php.net'>PHP</a> 
 # 🔗 TOKEN Retrive
 Retrive API Token from t.me/OverDarkAPI_bot, if you not have, register to bot
 
+# 💾 Install 
+With <b>json</b> file (<code>Composer</code>):
+``` json
+{
+    ...
+    "require": {
+        "tappo03/overdark_api": "*"
+    }
+}
+```
+With <b>command line</b> (<code>Composer</code>):
+➖ <code>composer require tappo03/overdark_api</code>
 # ⚙️ Example
 ➖ You can call overdark api with <code>tappo03\overdark\api</code> namespace:
 ```php
