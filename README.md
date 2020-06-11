@@ -35,3 +35,43 @@ $over_dark = new request('it','token',false);
 
 print_r ($over_dark->get_profile ('0pl'));
 ```
+➖ <b>get_clan example:</b>
+```php
+require_once ( __DIR__ . '/vendor/autoload.php' );
+
+use tappo03\overdark\api\request;
+
+$over_dark = new request('it','token',false);
+
+print_r ($over_dark->get_clan ('CN0PP'));
+```
+➖ <b>get_char_info example:</b>
+```php
+require_once ( __DIR__ . '/vendor/autoload.php' );
+
+use tappo03\overdark\api\request;
+
+$over_dark = new request('it','token',false);
+
+print_r ($over_dark->get_char_info ());
+```
+➖ <b>get_classification example:</b>
+```php
+require_once ( __DIR__ . '/vendor/autoload.php' );
+
+use tappo03\overdark\api\request;
+
+$over_dark = new request('it','token',false);
+
+print_r ($over_dark->get_classification ('overdark')); // or darkworld
+```
+➖ <b>get_player_image example:</b> 
+```php
+require_once ( __DIR__ . '/vendor/autoload.php' );
+
+use tappo03\overdark\api\request;
+
+$over_dark = new request('it','token',false);
+
+print_r ($over_dark->get_player_image (10000000,true)); // or false (without background)
+```
