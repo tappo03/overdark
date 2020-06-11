@@ -1,11 +1,11 @@
 # 💡 OverDark API PHP Library
-All functions of <b>overdark API</b> into a <a href = 'https://php.net'>PHP</a> Library, for more info https://overdarkgame.com/langs/en/api/#/documentation
+All functions of **overdark API** into a [PHP](https://php.net) Library, for more info https://overdarkgame.com/langs/en/api/#/documentation
 
 # 🔗 TOKEN Retrive
-Retrive API Token from <a href = 'https://t.me/OverDarkAPI_bot'>OverDarkAPI</a>, if you not have, register to bot
+Retrive API Token from [OverDarkAPI](https://t.me/OverDarkAPI_bot), if you not have, register to bot
 
 # 💾 Installation
-With <b>json file</b> (<code>Composer</code>):
+With **json file** (`Composer`):
 ``` json
 {
     ...
@@ -14,11 +14,11 @@ With <b>json file</b> (<code>Composer</code>):
     }
 }
 ```
-With <b>command line</b> (<code>Composer</code>):
+With **command line** (`Composer`):
 
-➖ <code>composer require tappo03/overdark_api</code>
+➖ `composer require tappo03/overdark_api`
 # ⚙️ Example
-➖ You can call overdark api with <code>tappo03\overdark\api</code> namespace:
+➖ You can call overdark api with `tappo03\overdark\api` namespace:
 ```php
 require_once ( __DIR__ . '/vendor/autoload.php' );
 
@@ -26,7 +26,7 @@ use tappo03\overdark\api\request;
 
 $over_dark = new request('en','token',false);
 ```
-➖ <b>get_profile example:</b>
+➖ **get_profile example:**
 ```php
 require_once ( __DIR__ . '/vendor/autoload.php' );
 
@@ -36,7 +36,7 @@ $over_dark = new request('en','token',false);
 
 print_r ($over_dark->get_profile ('0pl'));
 ```
-➖ <b>get_clan example:</b>
+➖ **get_clan example:**
 ```php
 require_once ( __DIR__ . '/vendor/autoload.php' );
 
@@ -46,7 +46,7 @@ $over_dark = new request('en','token',false);
 
 print_r ($over_dark->get_clan ('CN0PP'));
 ```
-➖ <b>get_char_info example:</b>
+➖ **get_char_info example:**
 ```php
 require_once ( __DIR__ . '/vendor/autoload.php' );
 
@@ -56,7 +56,7 @@ $over_dark = new request('en','token',false);
 
 print_r ($over_dark->get_char_info ());
 ```
-➖ <b>get_classification example:</b>
+➖ **get_classification example:**
 ```php
 require_once ( __DIR__ . '/vendor/autoload.php' );
 
@@ -66,7 +66,7 @@ $over_dark = new request('en','token',false);
 
 print_r ($over_dark->get_classification ('overdark')); // or darkworld
 ```
-➖ <b>get_player_image example:</b> 
+➖ **get_player_image example:**
 ```php
 require_once ( __DIR__ . '/vendor/autoload.php' );
 
