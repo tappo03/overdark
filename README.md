@@ -1,5 +1,5 @@
 # 💡 OverDark API PHP Library
-All functions of <b>overdark API</b> into a <a href = 'https://php.net'>PHP</a> Library, for more info https://overdarkgame.com/langs/it/api/#/documentation
+All functions of <b>overdark API</b> into a <a href = 'https://php.net'>PHP</a> Library, for more info https://overdarkgame.com/langs/en/api/#/documentation
 
 # 🔗 TOKEN Retrive
 Retrive API Token from t.me/OverDarkAPI_bot, if you not have, register to bot
@@ -23,7 +23,7 @@ require_once ( __DIR__ . '/vendor/autoload.php' );
 
 use tappo03\overdark\api\request;
 
-$over_dark = new request('it','token',false);
+$over_dark = new request('en','token',false);
 ```
 ➖ <b>get_profile example:</b>
 ```php
@@ -31,7 +31,7 @@ require_once ( __DIR__ . '/vendor/autoload.php' );
 
 use tappo03\overdark\api\request;
 
-$over_dark = new request('it','token',false);
+$over_dark = new request('en','token',false);
 
 print_r ($over_dark->get_profile ('0pl'));
 ```
@@ -41,7 +41,7 @@ require_once ( __DIR__ . '/vendor/autoload.php' );
 
 use tappo03\overdark\api\request;
 
-$over_dark = new request('it','token',false);
+$over_dark = new request('en','token',false);
 
 print_r ($over_dark->get_clan ('CN0PP'));
 ```
@@ -51,7 +51,7 @@ require_once ( __DIR__ . '/vendor/autoload.php' );
 
 use tappo03\overdark\api\request;
 
-$over_dark = new request('it','token',false);
+$over_dark = new request('en','token',false);
 
 print_r ($over_dark->get_char_info ());
 ```
@@ -61,7 +61,7 @@ require_once ( __DIR__ . '/vendor/autoload.php' );
 
 use tappo03\overdark\api\request;
 
-$over_dark = new request('it','token',false);
+$over_dark = new request('en','token',false);
 
 print_r ($over_dark->get_classification ('overdark')); // or darkworld
 ```
@@ -71,7 +71,7 @@ require_once ( __DIR__ . '/vendor/autoload.php' );
 
 use tappo03\overdark\api\request;
 
-$over_dark = new request('it','token',false);
+$over_dark = new request('en','token',false);
 
 print_r ($over_dark->get_player_image (10000000,true)); // or false (without background)
 ```
