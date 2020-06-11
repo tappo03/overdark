@@ -43,8 +43,13 @@ class request
      */
     public function get_profile (string $tag)
     {
+        $args = [
+            'tag' => $tag,
+            'token' => $this->token,
+            'lang' => $this->lang
+        ];
         try {
-            $response = $this->client->request ('GET', 'get_profile.php?tag=' . urlencode ($tag) . '&token=' . urlencode ($this->token) . '&lang=' . urlencode ($this->lang));
+            $response = $this->client->request ('GET', 'get_profile.php?' . http_build_query($args));
         } catch (GuzzleException $e){
             throw new Exception('Error to get request: ' .$e->getMessage ());
         }
@@ -62,8 +67,13 @@ class request
      */
     public function get_clan (string $clan_id)
     {
+        $args = [
+            'tag' => $clan_id,
+            'token' => $this->token,
+            'lang' => $this->lang
+        ];
         try {
-            $response = $this->client->request ('GET', 'get_clan.php?tag=' . urlencode ($clan_id) . '&token=' . urlencode ($this->token) . '&lang=' . urlencode ($this->lang));
+            $response = $this->client->request ('GET', 'get_clan.php?' . http_build_query($args));
         } catch (GuzzleException $e){
             throw new Exception('Error to get request: ' .$e->getMessage ());
         }
@@ -80,8 +90,12 @@ class request
      */
     public function get_char_info ()
     {
+        $args = [
+            'token' => $this->token,
+            'lang' => $this->lang
+        ];
         try {
-            $response = $this->client->request ('GET', 'get_char_info.php?token=' . urlencode ($this->token) . '&lang=' . urlencode ($this->lang));
+            $response = $this->client->request ('GET', 'get_char_info.php?' . http_build_query($args));
         } catch (GuzzleException $e){
             throw new Exception('Error to get request: ' .$e->getMessage ());
         }
@@ -99,8 +113,13 @@ class request
      */
     public function get_classification (string $type)
     {
+        $args = [
+            'type' => $type,
+            'token' => $this->token,
+            'lang' => $this->lang
+        ];
         try {
-            $response = $this->client->request ('GET', 'get_classification.php?type=' . urlencode ($type) . '&token=' . urlencode ($this->token) . '&lang=' . urlencode ($this->lang));
+            $response = $this->client->request ('GET', 'get_classification.php?' . http_build_query ($args));
         } catch (GuzzleException $e){
             throw new Exception('Error to get request: ' .$e->getMessage ());
         }
