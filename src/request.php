@@ -2,6 +2,7 @@
 
 namespace tappo03\overdark\api;
 
+use Exception;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 
@@ -38,71 +39,75 @@ class request
      * Accedi alle informazioni del profilo del giocatore
      * @param string tag of Player
      * @return array | object
+     * @throws Exception Error request
      */
     public function get_profile (string $tag)
     {
         try {
             $response = $this->client->request ('GET', 'get_profile.php?tag=' . urlencode ($tag) . '&token=' . urlencode ($this->token) . '&lang=' . urlencode ($this->lang));
         } catch (GuzzleException $e){
-            exit($e->getMessage ());
+            throw new Exception('Error to get request: ' .$e->getMessage ());
         }
         if($response->getStatusCode () === 200)
             return json_decode ($response->getBody (), $this->array);
         else
-            exit($response->getStatusCode ());
+            throw new Exception('Error to get request: ' .$response->getStatusCode ());
     }
 
     /**
      * Accedi alle informazioni del clan
      * @param string $clan_id tag of Clan
      * @return array | object
+     * @throws Exception Error request
      */
     public function get_clan (string $clan_id)
     {
         try {
             $response = $this->client->request ('GET', 'get_clan.php?tag=' . urlencode ($clan_id) . '&token=' . urlencode ($this->token) . '&lang=' . urlencode ($this->lang));
         } catch (GuzzleException $e){
-            exit($e->getMessage ());
+            throw new Exception('Error to get request: ' .$e->getMessage ());
         }
         if($response->getStatusCode () === 200)
             return json_decode ($response->getBody (), $this->array);
         else
-            exit($response->getStatusCode ());
+            throw new Exception('Error to get request: ' . $response->getStatusCode ());
     }
 
     /**
      * Accedi alle informazioni dei personaggi
      * @return array | object
+     * @throws Exception Error request
      */
     public function get_char_info ()
     {
         try {
             $response = $this->client->request ('GET', 'get_char_info.php?token=' . urlencode ($this->token) . '&lang=' . urlencode ($this->lang));
         } catch (GuzzleException $e){
-            exit($e->getMessage ());
+            throw new Exception('Error to get request: ' .$e->getMessage ());
         }
         if($response->getStatusCode () === 200)
             return json_decode ($response->getBody (), $this->array);
         else
-            exit($response->getStatusCode ());
+            throw new Exception('Error to get request: ' .$response->getStatusCode ());
     }
 
     /**
      * Accedi alle informazioni sulla classifica dei giocatori
      * @param string $type type of classification you want, you can select from: overworld or darkworld
      * @return array | object
+     * @throws Exception Error request
      */
     public function get_classification (string $type)
     {
         try {
             $response = $this->client->request ('GET', 'get_classification.php?type=' . urlencode ($type) . '&token=' . urlencode ($this->token) . '&lang=' . urlencode ($this->lang));
         } catch (GuzzleException $e){
-            exit($e->getMessage ());
+            throw new Exception('Error to get request: ' .$e->getMessage ());
         }
         if($response->getStatusCode () === 200)
             return json_decode ($response->getBody (), $this->array);
         else
-            exit($response->getStatusCode ());
+            throw new Exception('Error to get request: ' .$response->getStatusCode ());
     }
 
     /**
