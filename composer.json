@@ -6,7 +6,8 @@
   "authors": [
     {
       "name": "Valerio" ,
-      "email": "info@tappo03.it"
+      "email": "info@tappo03.it",
+      "role": "Developer"
     }
   ] ,
   "require": {
