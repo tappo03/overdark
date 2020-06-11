@@ -24,6 +24,7 @@ With **command line** (`Composer`):
 ## ⚙️ Example
 ➖ You can call overdark api with `tappo03\overdark\api` namespace:
 ```php
+<?php
 require_once ( __DIR__ . '/vendor/autoload.php' );
 
 use tappo03\overdark\api\request;
@@ -32,6 +33,7 @@ $over_dark = new request('en','token',false);
 ```
 ➖ **get_profile example:**
 ```php
+<?php
 require_once ( __DIR__ . '/vendor/autoload.php' );
 
 use tappo03\overdark\api\request;
