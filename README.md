@@ -44,6 +44,7 @@ print_r ($over_dark->get_profile ('0pl'));
 ```
 ➖ **get_clan example:**
 ```php
+<?php
 require_once ( __DIR__ . '/vendor/autoload.php' );
 
 use tappo03\overdark\api\request;
@@ -54,6 +55,7 @@ print_r ($over_dark->get_clan ('CN0PP'));
 ```
 ➖ **get_char_info example:**
 ```php
+<?php
 require_once ( __DIR__ . '/vendor/autoload.php' );
 
 use tappo03\overdark\api\request;
@@ -64,6 +66,7 @@ print_r ($over_dark->get_char_info ());
 ```
 ➖ **get_classification example:**
 ```php
+<?php
 require_once ( __DIR__ . '/vendor/autoload.php' );
 
 use tappo03\overdark\api\request;
@@ -74,6 +77,7 @@ print_r ($over_dark->get_classification ('overdark')); // or darkworld
 ```
 ➖ **get_player_image example:**
 ```php
+<?php
 require_once ( __DIR__ . '/vendor/autoload.php' );
 
 use tappo03\overdark\api\request;
