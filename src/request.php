@@ -1,6 +1,6 @@
 <?php
 
-namespace tappo03\overdark\api;
+namespace Tappo03\overdark\api;
 
 use Exception;
 use GuzzleHttp\Client;
@@ -12,7 +12,7 @@ use GuzzleHttp\Exception\GuzzleException;
  * @docs https://overdarkgame.com/langs/it/api/#/documentation
  * @author t.me/tappo03
  */
-class request
+class Request
 {
     protected string $lang;
     protected string $token;
