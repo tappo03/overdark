@@ -27,64 +27,64 @@ With **command line** (`Composer`):
 ➖ You can call overdark api with `tappo03\overdark\api` namespace:
 ```php
 <?php
-require_once ( __DIR__ . '/vendor/autoload.php' );
+require_once __DIR__ . '/vendor/autoload.php';
 
-use tappo03\overdark\api\request;
+use Tappo03\overdark\api\request;
 
-$over_dark = new request('en','token',false);
+$over_dark = new Request('en','token',false);
 ```
 ➖ **get_profile example:**
 ```php
 <?php
-require_once ( __DIR__ . '/vendor/autoload.php' );
+require_once __DIR__ . '/vendor/autoload.php';
 
-use tappo03\overdark\api\request;
+use Tappo03\overdark\api\request;
 
-$over_dark = new request('en','token',false);
+$over_dark = new Request('en','token',false);
 
 print_r ($over_dark->get_profile ('0pl'));
 ```
 ➖ **get_clan example:**
 ```php
 <?php
-require_once ( __DIR__ . '/vendor/autoload.php' );
+require_once __DIR__ . '/vendor/autoload.php';
 
-use tappo03\overdark\api\request;
+use Tappo03\overdark\api\request;
 
-$over_dark = new request('en','token',false);
+$over_dark = new Request('en','token',false);
 
 print_r ($over_dark->get_clan ('CN0PP'));
 ```
 ➖ **get_char_info example:**
 ```php
 <?php
-require_once ( __DIR__ . '/vendor/autoload.php' );
+require_once __DIR__ . '/vendor/autoload.php';
 
-use tappo03\overdark\api\request;
+use Tappo03\overdark\api\request;
 
-$over_dark = new request('en','token',false);
+$over_dark = new Request('en','token',false);
 
 print_r ($over_dark->get_char_info ());
 ```
 ➖ **get_classification example:**
 ```php
 <?php
-require_once ( __DIR__ . '/vendor/autoload.php' );
+require_once __DIR__ . '/vendor/autoload.php';
 
-use tappo03\overdark\api\request;
+use Tappo03\overdark\api\request;
 
-$over_dark = new request('en','token',false);
+$over_dark = new Request('en','token',false);
 
 print_r ($over_dark->get_classification ('overworld')); // or darkworld
 ```
 ➖ **get_player_image example:**
 ```php
 <?php
-require_once ( __DIR__ . '/vendor/autoload.php' );
+require_once __DIR__ . '/vendor/autoload.php';
 
-use tappo03\overdark\api\request;
+use Tappo03\overdark\api\request;
 
-$over_dark = new request('en','token',false);
+$over_dark = new Request('en','token',false);
 
 print_r ($over_dark->get_player_image (10000000,true)); // or false (without background)
 ```
