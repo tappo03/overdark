@@ -51,12 +51,12 @@ class Request
         try {
             $response = $this->client->request ('GET', 'get_profile.php?' . http_build_query($args));
         } catch (GuzzleException $e){
-            throw new Exception('Error to get request: ' .$e->getMessage ());
+            throw new Exception('Error to get request: ' . $e->getMessage ());
         }
         if($response->getStatusCode () === 200)
             return json_decode ($response->getBody (), $this->array);
         else
-            throw new Exception('Error to get request: ' .$response->getStatusCode ());
+            throw new Exception('Error to get request: ' . $response->getStatusCode ());
     }
 
     /**
@@ -75,7 +75,7 @@ class Request
         try {
             $response = $this->client->request ('GET', 'get_clan.php?' . http_build_query($args));
         } catch (GuzzleException $e){
-            throw new Exception('Error to get request: ' .$e->getMessage ());
+            throw new Exception('Error to get request: ' . $e->getMessage ());
         }
         if($response->getStatusCode () === 200)
             return json_decode ($response->getBody (), $this->array);
@@ -97,12 +97,12 @@ class Request
         try {
             $response = $this->client->request ('GET', 'get_char_info.php?' . http_build_query($args));
         } catch (GuzzleException $e){
-            throw new Exception('Error to get request: ' .$e->getMessage ());
+            throw new Exception('Error to get request: ' . $e->getMessage ());
         }
         if($response->getStatusCode () === 200)
             return json_decode ($response->getBody (), $this->array);
         else
-            throw new Exception('Error to get request: ' .$response->getStatusCode ());
+            throw new Exception('Error to get request: ' . $response->getStatusCode ());
     }
 
     /**
@@ -121,12 +121,12 @@ class Request
         try {
             $response = $this->client->request ('GET', 'get_classification.php?' . http_build_query ($args));
         } catch (GuzzleException $e){
-            throw new Exception('Error to get request: ' .$e->getMessage ());
+            throw new Exception('Error to get request: ' . $e->getMessage ());
         }
         if($response->getStatusCode () === 200)
             return json_decode ($response->getBody (), $this->array);
         else
-            throw new Exception('Error to get request: ' .$response->getStatusCode ());
+            throw new Exception('Error to get request: ' . $response->getStatusCode ());
     }
 
     /**
@@ -140,7 +140,13 @@ class Request
         $image_type = $background === true
             ? 'with_background'
             : 'without_background';
+        
+        $args = [
+            'type' => $image_type,
+            'token' => $this->token,
+            'id' => $image_id
+        ];
 
-        return 'https://api.overdarkgame.com/get_player_image.php?type=' . urlencode ($image_type) . '&token=' . urlencode ($this->token) . '&id=' . urlencode ($image_id);
+        return 'https://api.overdarkgame.com/get_player_image.php?' . http_build_query ($args);
     }
 }
