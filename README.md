@@ -24,7 +24,7 @@ With **command line** (`Composer`):
 
 ➖ `composer require tappo03/overdark_api`
 ## ⚙️ Example
-➖ You can call overdark api with `tappo03\overdark\api` namespace:
+➖ You can call overdark api with `Tappo03\overdark\api` namespace:
 ```php
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
