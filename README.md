@@ -31,7 +31,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use Tappo03\overdark\api\request;
 
-$over_dark = new Request('en','token',false);
+$over_dark = new Request('en', 'token', false);
 ```
 ➖ **get_profile example:**
 ```php
@@ -40,7 +40,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use Tappo03\overdark\api\request;
 
-$over_dark = new Request('en','token',false);
+$over_dark = new Request('en', 'token', false);
 
 print_r ($over_dark->get_profile ('0pl'));
 ```
@@ -51,7 +51,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use Tappo03\overdark\api\request;
 
-$over_dark = new Request('en','token',false);
+$over_dark = new Request('en', 'token', false);
 
 print_r ($over_dark->get_clan ('CN0PP'));
 ```
@@ -62,7 +62,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use Tappo03\overdark\api\request;
 
-$over_dark = new Request('en','token',false);
+$over_dark = new Request('en', 'token', false);
 
 print_r ($over_dark->get_char_info ());
 ```
@@ -73,7 +73,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use Tappo03\overdark\api\request;
 
-$over_dark = new Request('en','token',false);
+$over_dark = new Request('en', 'token', false);
 
 print_r ($over_dark->get_classification ('overworld')); // or darkworld
 ```
@@ -84,7 +84,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use Tappo03\overdark\api\request;
 
-$over_dark = new Request('en','token',false);
+$over_dark = new Request('en', 'token',false);
 
 print_r ($over_dark->get_player_image (10000000,true)); // or false (without background)
 ```
