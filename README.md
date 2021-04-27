@@ -84,7 +84,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use Tappo03\overdark\api\request;
 
-$over_dark = new Request('en', 'token',false);
+$over_dark = new Request('en', 'token', false);
 
-print_r ($over_dark->get_player_image (10000000,true)); // or false (without background)
+print_r ($over_dark->get_player_image (10000000, true)); // or false (without background)
 ```
